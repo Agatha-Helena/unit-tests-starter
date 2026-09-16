@@ -17,6 +17,9 @@ describe("raiz", () => {
 
 describe("subtrai", () => {
     test ("Subtraia dois números positivos", () => {
+        expect(subtrai(3, 2)).toBe(1)
+    })
+    test ('Retornar numero negativo', () => {
         expect(subtrai(2, 3)).toBe(-1)
     })
 })
