@@ -24,28 +24,54 @@ describe('API /clientes (integracao com supertest)', () => {
     });
   });
 
-  describe('GET /clientes/:id', () => {
-    test.todo('retorna 200 e o cliente quando o id existe');
-    test.todo('retorna 404 com mensagem de erro quando o cliente nao existe');
-  });
+  /* describe('GET /clientes/:id', () => {
+    test.todo('retorna 200 e o cliente quando o id existe', () => {
+      
+    });
+    test.todo('retorna 404 com mensagem de erro quando o cliente nao existe', () => {
+      
+    });
+  }); */
 
-  describe('POST /clientes', () => {
-    test.todo('retorna 201 e o cliente criado com id gerado');
-    test.todo('retorna 400 quando o nome esta faltando');
-    test.todo('retorna 400 quando o email esta faltando');
-    test.todo('retorna 400 quando o email ja esta cadastrado');
-    test.todo('cliente criado aparece em GET /clientes');
-  });
+  /* describe('POST /clientes', () => {
+    test.todo('retorna 201 e o cliente criado com id gerado', () => {
+      
+    });
+    test.todo('retorna 400 quando o nome esta faltando', () => {
+      
+    });
+    test.todo('retorna 400 quando o email esta faltando', () => {
+      
+    });
+    test.todo('retorna 400 quando o email ja esta cadastrado', () => {
+      
+    });
+    test.todo('cliente criado aparece em GET /clientes', () => {
+      
+    });
+  }); */
 
-  describe('PUT /clientes/:id', () => {
-    test.todo('retorna 200 e o cliente atualizado quando o id existe');
-    test.todo('retorna 404 quando o cliente nao existe');
-    test.todo('retorna 400 quando o novo email ja pertence a outro cliente');
-  });
+  /* describe('PUT /clientes/:id', () => {
+    test.todo('retorna 200 e o cliente atualizado quando o id existe', () => {
+      
+    });
+    test.todo('retorna 404 quando o cliente nao existe', () => {
+      
+    });
+    test.todo('retorna 400 quando o novo email ja pertence a outro cliente', () => {
+      
+    });
+  }); */
 
-  describe('DELETE /clientes/:id', () => {
-    test.todo('retorna 204 quando o cliente e removido com sucesso');
-    test.todo('cliente removido nao aparece mais na listagem');
-    test.todo('retorna 404 quando o cliente nao existe');
-  });
+  /* describe('DELETE /clientes/:id', () => {
+    test.todo('retorna 204 quando o cliente e removido com sucesso', () => {
+      
+    });
+    test.todo('cliente removido nao aparece mais na listagem', () => {
+      
+    });
+    test.todo('retorna 404 quando o cliente nao existe', () => {
+      
+    });
+  }); */
 });

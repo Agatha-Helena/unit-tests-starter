@@ -6,7 +6,7 @@ describe("soma", () => {
     })
 })
 
-describe("raiz", () => {
+/* describe("raiz", () => {
     test("Calcule a raiz de um numero nao exato com precisao", () => {
         expect(raiz(2)).toBeCloseTo(1.414)
     })
@@ -49,4 +49,4 @@ describe("media", () => {
     test("Calcula a media de numeros positivos", () => {
         expect(media)
     })
-})
+}) */

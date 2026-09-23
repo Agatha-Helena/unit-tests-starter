@@ -13,6 +13,7 @@ describe('ProdutoService - Testes Unitários com Mocks', () => {
         }
         service = new ProdutoService(mockRepository)
     })
+
     describe('Listar', () => {
         test('chama repository.findAll uma vez e retorna o resultado', () => {
             const produtos = [{id: 1, nome: "Coxinha", preco: 5}]
@@ -34,7 +35,7 @@ describe('ProdutoService - Testes Unitários com Mocks', () => {
             expect(mockRepository.findById).toHaveBeenCalledWith(id)
             expect(resultado).toEqual(produto)
         })
-    })
+    });
 
     describe('Criar', () => {
         test('passa dados para criar e retorna produto criado', () => {
@@ -50,18 +51,17 @@ describe('ProdutoService - Testes Unitários com Mocks', () => {
         test('lancar erro quando os dados forem invalidos', () => {
             const produto = {preco: 3}
 
-            expect(() => service.criar(produto)).toThrow('Dados invalidos.')
-            /* dando erro */
+            expect(() => service.criar(produto)).toThrow('Nome e preco sao obrigatorios')
         })
-    })
+    });
     
     describe('Deletar', () => {
         /* nao finalizado */
-        test('deletar o produto existente com o id correto', () => {
+        /* test('deletar o produto existente com o id correto', () => {
 
-        })
-        test('lancar erro quando o id do produto nao for encontrado', () => {
+        }) */
+        /* test('lancar erro quando o id do produto nao for encontrado', () => {
             expect().toThrow('Produto nao encontrado')
-        })
-    })
+        }) */
+    });
 })

@@ -14,6 +14,9 @@ class ProdutoService {
   }
 
   criar(dados) {
+    if (!dados.nome || !dados.preco){
+      throw new Error('Nome e preco sao obrigatorios')
+    }
     return this.repository.create(dados);
   }
 
